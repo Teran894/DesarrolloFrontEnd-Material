@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    background-color: #000008;
+    color: white;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: centers;
+
+    height: 90px;
+    background-color:#000008;
+
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.10);
+}
+
+/*TODO MOVER ARRIBA*/  
+
+#logo,
+#contacto {
+    height: 55px;
+    width: auto;
+    display: flex;
+    margin: 10px;
+}
+
+#logo, 
+#contacto > img{
+    width: auto;
+    padding: 5px;
+} 
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: 1.25rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+nav li:hover, 
+#contacto:hover{
+    background-color: #270F2C;
+    border-radius: 8px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #361876;
+    font-weight: 600;
+}
+
+section {
+    height: 100vh;
+    scroll-margin-top: 90px;
+    padding: 45px 90px;
+    border: 1px dashed #361876;
+}
+
+section > h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 5px solid #361876;
+    margin-bottom: 2rem;
+    color: #361876;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../img/Playwin-banner.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #f5f7fa;
+
+    height: 100vh;
+}
+
+.home-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #34495e;
+    opacity: 0.8;
+    padding: 3rem;
+
+}
+
+#footer{
+    text-align: center;
+    align-content: center;
+    background: hsl(288, 47%, 62%);
+    height: 50vh;
+}
+
+#footer a{
+    height: 55px;
+    width: auto;
+    display: flex;
+    margin: 10px;
+    
+}
+
+#btn-ir-arriba{
+    display: none;
+    cursor: pointer;
+
+    position: fixed;
+    height: 50px;
+    width: 50px;
+
+    border-radius: 25px;
+    border: none;
+    background: #361876;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+
+    box-shadow: 0px 12px 7px rgba(192, 162, 162, 0.1);
+    transition: 300ms ease;
+}
+
+#btn-ir-arriba:hover{
+    background: hsl(288, 47%, 62%);
+    transform: translateY(-0.5rem);
+}
+
+#btn-ir-arriba svg{
+    stroke: white;
+    stroke-width: 3px;
+    width:25px;
+    fill:none;
+}
