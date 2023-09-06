@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <link rel="icon" type="image/x-icon" href="./img/Playwin-Logo.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
         <link rel="stylesheet" type="text/css" href="./css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" rel="stylesheet" type="text/css">
         <script src="./js/main.js">
         </script>
         <title>PlayWin</title>
@@ -19,9 +22,9 @@
             <nav>
                 <ul>
                     <li><a href="#Destacados">Destacados</a></li>
-                    <li><a href="#Playstation">Playstation</a></li>
-                    <li><a href="#Xbox">Xbox</a></li>
-                    <li><a href="#Nintendo">Nintendo</a></li>
+                    <li><a href="#JuegosRecientes">Juegos Recientes</a></li>
+                    <li><a href="#Eventos">Eventos</a></li>
+                    <!--<li><a href="#Opiniones">Opiniones</a></li>-->
                 </ul>
             </nav>
 
@@ -35,48 +38,171 @@
             <section id="home">
                 <div class="home-banner">
                     <h1></h1>
-                    <h3>Bienvenidos a Playwin site, donde encontraras varias noticias sobre cualquier videojuego</h3>
+                    <h3>Bienvenidos a Playwin site, el sitio donde encontraras los juegos mas populares del mes y eventos gaming</h3>
                     <p></p>
                 </div>
             </section>
 
             <section id="Destacados">
-                <h1>Juegos destacados de la semana</h1>
-                <h3>Aqui puedes ver los videojuegos mas populares de la semana</h3>
-                <p></p>
+                <h1>Juego destacados de la semana</h1>
+
+                <div class="destacados-container">
+
+                    <div class="destacado-info">
+                    <img src="./img/juegos/armoredcorevi.png" alt="Juegosemanal">
+                    <h3>Armored Core VI: Fires of Rubricon</h3>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p>En este regreso muy esperado de la serie de combate de mechas de FromSoftware (Elden Ring, Bloodborne), podrás elegir una amplia variedad de piezas y armas para crear tu propio mecha personalizado y te enfrentarás a misiones desafiantes y vertiginosas.</p>
+                    </div>
+
+                    <div class="usuario-comentarios">
+
+                    <div class="comentario">
+
+                        <div class="usuario">
+                        <img src="./img/usuarios/usuario1.jpg" alt="Usuario 1">
+                        </div>
+                        <div class="usuario-mensaje">
+                        <p>Muy buen juego! Mucha customizacion y desafio! Me encanta poder volar con robots!</p>
+                        <p class="usuario-firma">- Lo recomiendo</p>
+                        </div>
+
+                    </div>
+
+                    <div class="comentario">
+
+                        <div class="usuario">
+                        <img src="./img/usuarios/usuario2.jpg" alt="Usuario 2">
+                        </div>
+                        <div class="usuario-mensaje">
+                        <p>FromSoftware se la avento! Pero que buen juegazo!</p>
+                        <p class="usuario-firma">- Lo recomiendo</p>
+                        </div>
+
+                    </div>
+
+                    <div class="comentario">
+
+                        <div class="usuario">
+                        <img src="./img/usuarios/usuario3.jpg" alt="Usuario 3">
+                        </div>
+                        <div class="usuario-mensaje">
+                        <p>No lo jueguen! El juego es imposible de jugar por que esta dificil!</p>
+                        <p class="usuario-firma">- No lo recomiendo</p>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
             </section>
 
-            <section id="Playstation">
-                <h1>Playstation</h1>
+            <!--
+            <section id="Opiniones">
+                <h1>Opiniones</h1>
                 <h3>Destacados de la plataforma Playstation</h3>
                 <p></p>
             </section>
+        -->
 
-            <section id="Xbox">
-                <h1>Xbox</h1>
-                <h3>Destacados de la plataforma Xbox</h3>
-                <p></p>
+            <section id="#JuegosRecientes">
+                <h1>Juegos populares recientes</h1>
+
+                <div class="card-container">
+
+                    <div class="card">
+                    <img src="./img/juegos/hollowknight.jpg" alt="Juego 2">
+                    <h3>Hollow Knight</h3>
+                    <p>Hollow Knight es una aventura de acción clásica en 2D ambientada en un vasto mundo interconectado. Explora cavernas tortuosas, ciudades antiguas y páramos mortales. Combate contra criaturas corrompidas, haz nuevas amistades con extraños insectos y resuelve los antiguos misterios que yacen en el corazón del reino.</p>
+                    </div>
+
+                    <div class="card">
+                    <img src="./img/juegos/honkaiST.jpg" alt="Juego 1">
+                    <h3>Honkai Star Rail</h3>
+                    <p>Honkai: Star Rail es un videojuego de rol y combates por turnos, descritos como emocionantes y estratégicos, que lleva a los jugadores a embarcarse en una aventura estelar firmada por los creadores de Genshin Impact. En su camino, hay que explorar laberintos y descubrir los secretos del Fragmetum en equipo.</p>
+                    </div>
+
+                    <div class="card">
+                    <img src="./img/juegos/starfield.jpg" alt="Juego 3">
+                    <h3>Starfield</h3>
+                    <p>En este juego de rol de próxima generación ambientado entre las estrellas, podrás crear el personaje que desees y explorar con una libertad sin precedentes mientras te embarcas en un viaje épico para desentrañar el mayor misterio de la humanidad dos décadas después de una guerra colonial entre dos grandes facciones.</p>
+                    </div>
+
+                    <div class="card">
+                    <img src="./img/juegos/armoredcorevi.png" alt="Juego 4">
+                    <h3>ArmoredCore VI: Fires of Rubricon</h3>
+                    <p>Armored Core VI se ambienta en el remoto planeta Rubicón 3 que trae una nueva y misteriosa sustancia que debía ser una fuente de energía revolucionaria para las capacidades tecnológicas de la humanidad. Por supuesto no terminó bien: provocó una catástrofe que afectó al planeta y los cuerpos cercanos.</p>
+                    </div>
+
+
+                </div>
             </section>
 
-            <section id="Nintendo">
-                <h1>Nintendo</h1>
-                <h3>Destacados de la plataforma Nintendo</h3>
-                <p></p>
+            <section id="Eventos">
+                <h1>Eventos proximos</h1>
+                <div class="card-container">
+
+                    <div class="card">
+                      <img src="./img/eventos/evento1.png" alt="Evento 1">
+                      <h3>Nintendo Live</h3>
+                      <p>Inician del 1 de septiembre hasta 4 de septiembre</p>
+                      <button class="btn" id="btn-modelo-1">Detalles de Evento</button>
+                    </div>
+            
+                    <div class="card">
+                      <img src="./img/eventos/evento2.png" alt="Evento 2">
+                      <h3>Pax West</h3>
+                      <p>Inician del 1 de septiembre hasta 4 de septiembre</p>
+                      <button class="btn" id="btn-modelo-2">Detalles de Evento</button>
+                    </div>
+            
+                    <div class="card">
+                      <img src="./img/eventos/evento3.png" alt="Evento 3">
+                      <h3>Indie Dev Day</h3>
+                      <p>Inician del 8 de septiembre hasta 10 de septiembre</p>
+                      <button class="btn" id="btn-modelo-3">Detalles de Evento</button>
+                    </div>
+            
+            
+                  </div>
             </section>
         </main>
 
         <footer id="footer">
-            <h1>Formulario de Contatos</h1>
-            <h3>Contactos adicionales | Redes adicionales</h3>  
-            <a id="contacto1" target="_blank" rel="noopener" href="https://www.facebook.com/" class="center">
-                <img src="./img/facebooklogo.png" alt="Facebook">
-            </a>          
-            <a id="contacto2" target="_blank" rel="noopener" href="https://www.twitter.com/" class="center">
-                <img src="./img/twitterlogo.png" alt="Twitter">
-            </a>    
-            <a id="contacto3" target="_blank" rel="noopener" href="https://www.instagram.com/" class="center">
-                <img src="./img/instagramlogo.png" alt="Instagram">
-            </a>
+
+            <div class="contacto-container">
+        
+              <h2>Contacto</h2>
+        
+              <form id="contacto-form">
+        
+                <input type="text" id="nombre" placeholder="Nombre" required>
+        
+                <input type="email" id="email" placeholder="Email" required>
+        
+                <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+        
+                <button type="submit" class="btn">Enviar</button>
+        
+              </form>
+        
+            </div>
+        
+            <div class="redes-sociales-container">
+        
+              <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        
+            </div>
             <p>PlayWin &copy;</p>
         </footer>
 

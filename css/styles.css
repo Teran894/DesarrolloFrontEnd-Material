@@ -1,9 +1,14 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
 }
+  
+html {
+    scroll-behavior: smooth;
+}
+  
 
 body{
     font-family: 'Inter',sans-serif;
@@ -19,7 +24,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: centers;
+    align-items: center;
 
     height: 90px;
     background-color:#000008;
@@ -27,9 +32,8 @@ header{
     position: fixed;
     width: 100%;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.10);
+    z-index: 1;
 }
-
-/*TODO MOVER ARRIBA*/  
 
 #logo,
 #contacto {
@@ -115,20 +119,198 @@ section > h1{
 
 }
 
-#footer{
-    text-align: center;
-    align-content: center;
-    background: hsl(288, 47%, 62%);
-    height: 50vh;
-}
+/* #region destacados*/
 
-#footer a{
-    height: 55px;
-    width: auto;
+.destacados-container {
     display: flex;
-    margin: 10px;
-    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 60px;
+  }
+  
+  .destacado-info {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    background: hsl(287, 67%, 39%);
+    box-shadow: 0 10px 8px rgba(175, 95, 186, 0.1);
+    border-radius: 3px;
+  }
+  
+  .destacado-info img {
+    max-width: 50%;
+  }
+  
+  .star-rating {
+    color: gold;
+    font-size: 1.5rem;
+  }
+  
+  .usuario-comentarios {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .comentario {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background-color: hsl(287, 67%, 39%);
+    border-radius: 8px;
+  }
+  
+  .usuario img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .usuario-mensaje {
+    flex: 1;
+    margin-bottom: 0.75rem;
+  }
+  
+  .usuario-firma {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+/* #endregion */
+
+/* #region eventos */
+
+button.btn,
+a.button-link {
+    cursor: pointer;
+  
+    background-color: #361876;
+    color: #ffffff;
+    font-size: 1.25rem;
+  
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+  
+    border: none;
+  
+    border-radius: 21px;
+    transition: color 0.5s;
 }
+  
+a.button-link {
+    display: inline;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+  
+button.btn:hover,
+ a.button-link:hover {
+    background-color: hsl(318, 61%, 37%);
+}
+  
+/* #endregion */
+
+/* #region juegosrecientes*/
+.card-container {
+    display: flex;
+  }
+  
+.card {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    background: hsl(287, 67%, 39%);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+}
+  
+.card img {
+    width: 100%;
+    height: 350px;
+    border-radius: 3px;
+}
+  
+.card h3 {
+    margin-bottom:  10px;
+    font-size: 1.5rem;
+}
+  
+.card p {
+    margin-bottom: 10px;
+    color:white;
+}
+/* #endregion*/
+
+/* #region footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background: hsl(287, 67%, 39%);
+    color:black;
+    text-align: center;
+    padding: 6rem 3rem;
+  }
+  
+  .contacto-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  #contacto-form {
+    width: 600px;
+    max-width: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 1rem;
+    padding: 8px;
+    border: 1px solid #f5f7fa;
+    border-radius: 3px;
+  }
+  
+/* #endregion */
+
+/* #region REDES SOCIALES*/
+
+    .redes-sociales-container{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 3rem 2rem;
+    }
+    
+    .fa-brands {
+        font-size: 2rem;
+        color: var(--color-primario);
+    }
+    
+    .fa-brands:hover{
+        color:hsl(210, 29%, 24%);
+    }
+    
+    .fa-brands:active{
+        color:hsl(210, 29%, 19%);
+    }
+  
+/* #endregion */
+
+/* #region btn-ir-arriba */
 
 #btn-ir-arriba{
     display: none;
@@ -150,7 +332,7 @@ section > h1{
 }
 
 #btn-ir-arriba:hover{
-    background: hsl(288, 47%, 62%);
+    background: hsl(286, 36%, 41%);
     transform: translateY(-0.5rem);
 }
 
@@ -160,3 +342,37 @@ section > h1{
     width:25px;
     fill:none;
 }
+
+/* #endregion */
+
+/*
+button.btn,
+a.button-link {
+    cursor: pointer;
+  
+    background-color: var(--color-primario);
+    color: #ffffff;
+    font-size: 1.25rem;
+  
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+  
+    border: none;
+  
+    border-radius: 21px;
+    transition: color 0.5s;
+}
+  
+a.button-link {
+    display: inline;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+  
+button.btn:hover,
+a.button-link:hover {
+    background-color: #5fbaa7;
+}
+*/

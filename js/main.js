@@ -1,32 +1,56 @@
+// Impresion en consola
 
-console.log("Hola mundo!");
+console.log('Hola mundo!');
 
-function mostrarMensajeInicial(params){
+// Funcion tradional
 
-    if(confirm('Este sitio esta en desarrollo, manda tu informacion para cubrir los gastos')){
-        alert('Has ganado un Iphone X10, pon tu informacion!')
-    
-    }else{
-        alert('Danos tu dinero o te doxxeamos.')
-    }
+function mostrarMensajeInicial() {
+
+  if (confirm('Este sitio esta en desarrollo, disculpe las molestias')) {
+    alert('Gracias por visitarnos!');
+  } else {
+    alert('...');
+  }
 
 }
 
-document.addEventListener("DOMContentLoaded",()=>{
-    const scrollToBottomButton = document.getElementById('btn-ir-arriba');
+// Evento de boton ir a arriba
 
-    window.addEventListener("scroll" , ()=>{
-        if(window.scrollY > 100) {
-            scrollToBottomButton.style.display='block';
-        } else{
-            scrollToBottomButton.style.display='none';
-        }
-    })
+document.addEventListener("DOMContentLoaded", () => {
 
-    scrollToBottomButton.addEventListener("click",()=>{
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-    })
-})
+  const scrollToBottomButtom = document.getElementById('btn-ir-arriba');
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      scrollToBottomButtom.style.display = 'block';
+    } else {
+      scrollToBottomButtom.style.display = 'none';
+    }
+  });
+
+  scrollToBottomButtom.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth'
+    });
+  });
+
+});
+
+
+// Recuperar datos del formulario
+
+
+const contactoForm = document.getElementById('contacto-form');
+
+contactoForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const mensaje = document.getElementById("mensaje").value;
+
+  alert('Gracias por contactarnos - ' + nombre + ' | ' + email + ' | ' + mensaje);
+
+  contactoForm.reset();
+});
