@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+
+body{
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    background-color: #000008;
+    color: white;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 90px;
+    background-color:#000008;
+
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.10);
+    z-index: 1;
+}
+
+#logo,
+#contacto {
+    height: 55px;
+    width: auto;
+    display: flex;
+    margin: 10px;
+}
+
+#logo, 
+#contacto > img{
+    width: auto;
+    padding: 5px;
+} 
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: 1.25rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+nav li:hover, 
+#contacto:hover{
+    background-color: #270F2C;
+    border-radius: 8px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #361876;
+    font-weight: 600;
+}
+
+section {
+    height: 100vh;
+    scroll-margin-top: 90px;
+    padding: 45px 90px;
+    border: 1px dashed #361876;
+}
+
+section > h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 5px solid #361876;
+    margin-bottom: 2rem;
+    color: #361876;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../img/Playwin-banner.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #f5f7fa;
+
+    height: 100vh;
+}
+
+.home-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #34495e;
+    opacity: 0.8;
+    padding: 3rem;
+
+}
+
+/* #region destacados*/
+
+.destacados-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 60px;
+  }
+  
+  .destacado-info {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    background: hsl(287, 67%, 39%);
+    box-shadow: 0 10px 8px rgba(175, 95, 186, 0.1);
+    border-radius: 3px;
+  }
+  
+  .destacado-info img {
+    max-width: 50%;
+  }
+  
+  .star-rating {
+    color: gold;
+    font-size: 1.5rem;
+  }
+  
+  .usuario-comentarios {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .comentario {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background-color: hsl(287, 67%, 39%);
+    border-radius: 8px;
+  }
+  
+  .usuario img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .usuario-mensaje {
+    flex: 1;
+    margin-bottom: 0.75rem;
+  }
+  
+  .usuario-firma {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+/* #endregion */
+
+/* #region eventos */
+
+button.btn,
+a.button-link {
+    cursor: pointer;
+  
+    background-color: #361876;
+    color: #ffffff;
+    font-size: 1.25rem;
+  
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+  
+    border: none;
+  
+    border-radius: 21px;
+    transition: color 0.5s;
+}
+  
+a.button-link {
+    display: inline;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+  
+button.btn:hover,
+ a.button-link:hover {
+    background-color: hsl(318, 61%, 37%);
+}
+  
+/* #endregion */
+
+/* #region juegosrecientes*/
+.card-container {
+    display: flex;
+  }
+  
+.card {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    background: hsl(287, 67%, 39%);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+}
+  
+.card img {
+    width: 100%;
+    height: 350px;
+    border-radius: 3px;
+}
+  
+.card h3 {
+    margin-bottom:  10px;
+    font-size: 1.5rem;
+}
+  
+.card p {
+    margin-bottom: 10px;
+    color:white;
+}
+/* #endregion*/
+
+/* #region footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background: hsl(287, 67%, 39%);
+    color:black;
+    text-align: center;
+    padding: 6rem 3rem;
+  }
+  
+  .contacto-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  #contacto-form {
+    width: 600px;
+    max-width: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 1rem;
+    padding: 8px;
+    border: 1px solid #f5f7fa;
+    border-radius: 3px;
+  }
+  
+/* #endregion */
+
+/* #region REDES SOCIALES*/
+
+    .redes-sociales-container{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 3rem 2rem;
+    }
+    
+    .fa-brands {
+        font-size: 2rem;
+        color: var(--color-primario);
+    }
+    
+    .fa-brands:hover{
+        color:hsl(210, 29%, 24%);
+    }
+    
+    .fa-brands:active{
+        color:hsl(210, 29%, 19%);
+    }
+  
+/* #endregion */
+
+/* #region btn-ir-arriba */
+
+#btn-ir-arriba{
+    display: none;
+    cursor: pointer;
+
+    position: fixed;
+    height: 50px;
+    width: 50px;
+
+    border-radius: 25px;
+    border: none;
+    background: #361876;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+
+    box-shadow: 0px 12px 7px rgba(192, 162, 162, 0.1);
+    transition: 300ms ease;
+}
+
+#btn-ir-arriba:hover{
+    background: hsl(286, 36%, 41%);
+    transform: translateY(-0.5rem);
+}
+
+#btn-ir-arriba svg{
+    stroke: white;
+    stroke-width: 3px;
+    width:25px;
+    fill:none;
+}
+
+/* #endregion */
+
+/*
+button.btn,
+a.button-link {
+    cursor: pointer;
+  
+    background-color: var(--color-primario);
+    color: #ffffff;
+    font-size: 1.25rem;
+  
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+  
+    border: none;
+  
+    border-radius: 21px;
+    transition: color 0.5s;
+}
+  
+a.button-link {
+    display: inline;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+  
+button.btn:hover,
+a.button-link:hover {
+    background-color: #5fbaa7;
+}
+*/
