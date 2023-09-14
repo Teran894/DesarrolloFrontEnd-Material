@@ -74,7 +74,7 @@ nav li:hover,
 
 nav a{
     text-decoration: none;
-    color: #361876;
+    color: hsl(318, 61%, 37%);
     font-weight: 600;
 }
 
@@ -82,7 +82,7 @@ section {
     height: 100vh;
     scroll-margin-top: 90px;
     padding: 45px 90px;
-    border: 1px dashed #361876;
+    border: 1px dashed hsl(318, 61%, 37%);
 }
 
 section > h1{
@@ -181,8 +181,9 @@ section > h1{
 
 /* #region eventos */
 
-button.btn,
-a.button-link {
+a.btn,
+a.button-link,
+button.button-action {
     cursor: pointer;
   
     background-color: #361876;
@@ -190,8 +191,9 @@ a.button-link {
     font-size: 1.25rem;
   
     width: 100%;
-    height: 42px;
+    height: 2rem;
     padding: 0 2rem;
+    text-decoration: none;
   
     border: none;
   
@@ -206,8 +208,9 @@ a.button-link {
     text-align: center;
 }
   
-button.btn:hover,
- a.button-link:hover {
+a.btn:hover,
+button.button-action:hover,
+a.button-link:hover {
     background-color: hsl(318, 61%, 37%);
 }
   
@@ -233,6 +236,10 @@ button.btn:hover,
     width: 100%;
     height: 350px;
     border-radius: 3px;
+}
+
+.card img:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
   
 .card h3 {

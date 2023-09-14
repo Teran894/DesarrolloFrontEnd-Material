@@ -1,9 +1,7 @@
 // Impresion en consola
-
 console.log('Hola mundo!');
 
 // Funcion tradional
-
 function mostrarMensajeInicial() {
 
   if (confirm('Este sitio esta en desarrollo, disculpe las molestias')) {
@@ -15,7 +13,6 @@ function mostrarMensajeInicial() {
 }
 
 // Evento de boton ir a arriba
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const scrollToBottomButtom = document.getElementById('btn-ir-arriba');
@@ -39,8 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Recuperar datos del formulario
-
-
 const contactoForm = document.getElementById('contacto-form');
 
 contactoForm.addEventListener("submit", (event) => {
@@ -53,4 +48,17 @@ contactoForm.addEventListener("submit", (event) => {
   alert('Gracias por contactarnos - ' + nombre + ' | ' + email + ' | ' + mensaje);
 
   contactoForm.reset();
+});
+
+//BOTONES de eventos
+document.getElementById("btn-modelo-1").addEventListener("click", function() {
+  window.location.href = "https://www.nintendo.com/nintendo-live/";
+});
+
+document.getElementById("btn-modelo-2").addEventListener("click", function() {
+  window.location.href = "https://west.paxsite.com/";
+});
+
+document.getElementById("btn-modelo-3").addEventListener("click", function() {
+  window.location.href = "https://www.indiedevday.es/";
 });
